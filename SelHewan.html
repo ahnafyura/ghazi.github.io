@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sel Hewan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .sel-hewan {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .rectangle-141 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 230%;
+            background-color: #0080FF;
+        }
+
+        .container-20 {
+            margin-top: 125vh;
+            position: relative;
+            width: 80%;
+            height: 200vh;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container-9 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .container-4 {
+            display: flex;
+            align-items: center;
+        }
+
+        .rectangle-183 {
+            width: 30px;
+            height: 30px;
+            background-color: #0080FF;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .bio-sync {
+            font-weight: bold;
+            font-size: 24px;
+            font-family: "Inter";
+            margin-top: 2vh;
+        }
+
+        .icontimes {
+            cursor: pointer;
+        }
+
+        .sel-hewan-1 {
+            font-weight: bold;
+            font-size: 32px;
+            margin: 20px 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .container-14 {
+            position: relative;
+            width: 100%;
+            height: 50%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 40px;
+            margin-left: 50px;
+        }
+
+        .rectangle-76 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .item-sel-hewan {
+            padding: 2vh 2vh;
+            list-style-type: none;
+            display: block;
+            background: linear-gradient(to right, #00BFFF, #353598);
+            border-radius: 10px;
+            width: 50%;
+            height: 70%;
+            align-items: center;
+            text-align: center;
+            color: #ffffff;
+            margin-bottom: 10px;
+            transition: .3s ease;
+        }
+
+        .item-sel-hewan:hover {
+            transform: scale(1.10);
+        }
+
+        a {
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        img {
+            width: 10vh;
+            border-radius: 10px;
+            padding: 2px;
+        }
+
+        .container-22 {
+            width: 100%;
+            height: auto;
+        }
+
+        .onClick {
+            margin-top: 35vh;
+            width: 30%;
+            border-radius: 10px;
+            color: white;
+            background-color: rgb(97, 97, 97);
+            height: 5%;
+            cursor: pointer;
+            margin-bottom: 20px;
+            transition: .5s ease;
+        }
+
+        .onClick:hover {
+            color: antiquewhite;
+            background-color: rgb(37, 37, 37);
+        }
+
+        /* Add styles for other elements */
+    </style>
+</head>
+
+<body>
+    <div class="sel-hewan">
+        <div class="rectangle-141"></div>
+        <div class="container-20">
+            <div class="bio-sync">BioSync</div>
+            <div class="container-9">
+                <div class="container-4"></div>
+                <div class="icontimes">
+                    <!-- <img class="vector" src="../assets/vectors/Unknown" /> -->
+                </div>
+            </div>
+            <div class="sel-hewan-1">Sel Hewan</div>
+            <img class="container-22" src="/img/Sel-Hewan-removebg-preview 2 (1).png" />
+            <div class="container-14">
+                <a href="#" class="item-sel-hewan" id="1">Robosom
+                    <img src="/img/ribosom.png" alt="">
+                </a>
+                <a href="#" class="item-sel-hewan" id="2">RE Kasar
+                    <img src="/img/REKasar.png" alt="">
+                </a>
+                <a href="#" class="item-sel-hewan" id="3">RE Halus
+                    <img src="/img/REHalus.png" alt="">
+                </a>
+                <a href="#" class="item-sel-hewan" id="4">Mitokondria
+                    <img src="/img/blabla.png" alt="">
+                </a>
+                <a href="#" class="item-sel-hewan" id="5">Membran Sel
+                    <img src="/img/selmembran.png" alt="">
+                </a>
+                <a href="#" class="item-sel-hewan" id="6">Membran Sel Inti
+                    <img src="/img/membranintisel.png" alt="">
+                </a>
+                <a href="#" class="item-sel-hewan" id="7">Liosom
+                    <img src="/img/libosom.png" alt="">
+                </a>
+                <a href="#" class="item-sel-hewan" id="8">Sentriol
+                    <img src="/img/setriol.png" alt="">
+                </a>
+                <a href="#" class="item-sel-hewan" id="9">Aparatus
+                    <img src="/img/aparatus.png" alt="">
+                </a>
+                <a href="#" class="item-sel-hewan" id="10">Sitoplasma
+                    <img src="/img/sitoplasma.png" alt="">
+                </a>
+                <a href="#" class="item-sel-hewan" id="11">Nukleus
+                    <img src="/img/nukleus.jpg" alt="">
+                </a>
+                <a href="#" class="item-sel-hewan" id="12">Nukleoplasma
+                    <img src="/img/nukleplasma.png" alt="">
+                </a>
+            </div>
+            <button class="onClick" onclick="window.location.href='/menu.html';">back</button>
+            <div class="container-2">
+                <div class="rectangle-148"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    document.querySelectorAll('.item-sel-hewan').forEach(item => {
+        item.addEventListener('click', function (event) {
+            event.preventDefault(); // Mencegah navigasi default
+            const itemId = item.id; // Mengambil id item
+
+            // Menghapus popup yang sudah ada sebelum membuat yang baru
+            const existingPopup = document.querySelector('.popup-container');
+            if (existingPopup) {
+                existingPopup.remove();
+            }
+
+            const popupContainer = document.createElement('div');
+            popupContainer.className = 'popup-container'; // Menambahkan class untuk identifikasi
+            popupContainer.style = `
+                position: fixed;
+                left: 50%;
+                top: 50%;
+                border-radius: 10px;
+                width: 50%;
+                height: auto;
+                transform: translate(-50%, -50%);
+                padding: 20px;
+                background: white;
+                border: 1.5px solid black;
+                z-index: 1000;
+                margin-block: 10px;
+                transition: all 0.5s ease-in;
+            `;
+
+            // Menentukan konten berdasarkan id
+            switch (itemId) {
+                case '1':
+                    popupContainer.textContent = 'Ribosom: Pabrik protein sel. Di sinilah instruksi dari DNA diterjemahkan untuk merangkai asam amino menjadi protein.';
+                    break;
+                case '2':
+                    popupContainer.textContent = 'RE Kasar (Retikulum Endoplasma Kasar): Jaringan membran yang ditempeli ribosom. Berperan dalam produksi, pelipatan, dan modifikasi protein yang akan dikirim ke luar sel atau ke bagian sel lainnya.';
+                    break;
+                case '3':
+                    popupContainer.textContent = 'RE Halus (Retikulum Endoplasma Halus): Jaringan membran yang tidak memiliki ribosom. Berperan dalam sintesis lipid, detoksifikasi obat-obatan, dan penyimpanan kalsium.';
+                    break;
+                case '4':
+                    popupContainer.textContent = 'Mitokondria: Pembangkit energi sel. Di sinilah nutrisi dipecah untuk menghasilkan ATP, molekul yang membawa energi untuk aktivitas sel.';
+                    break;
+                case '5':
+                    popupContainer.textContent = 'Membran Sel: Lapisan tipis yang membungkus sel, memisahkan bagian dalam sel dari lingkungan luar. Mengatur keluar masuknya zat dari dan ke dalam sel.';
+                    break;
+                case '6':
+                    popupContainer.textContent = 'Membran Sel Inti: Lapisan ganda yang membungkus nukleus, melindungi materi genetik di dalamnya. Memiliki pori-pori yang mengatur lalu lintas molekul antara nukleus dan sitoplasma.';
+                    break;
+                case '7':
+                    popupContainer.textContent = 'Lisosom: Kantung berisi enzim pencernaan. Berfungsi untuk memecah makromolekul, organel yang rusak, dan partikel asing yang masuk ke dalam sel.';
+                    break;
+                case '8':
+                    popupContainer.textContent = 'Sentriol: Sepasang struktur berbentuk silinder yang berperan dalam pembelahan sel. Membantu mengatur pembentukan benang-benang spindel yang menarik kromosom ke kutub-kutub sel.';
+                    break;
+                case '9':
+                    popupContainer.textContent = 'Aparatus Golgi: Tumpukan kantung pipih yang berfungsi sebagai pusat pengemasan dan pengiriman sel. Memodifikasi, menyortir, dan mengemas protein serta lipid untuk dikirim ke tujuan akhir.';
+                    break;
+                case '10':
+                    popupContainer.textContent = 'Sitoplasma: Cairan kental yang mengisi ruang di dalam sel, di luar nukleus. Tempat terjadinya banyak reaksi kimia penting dan menjadi tempat organel-organel sel berada.';
+                    break;
+                case '11':
+                    popupContainer.textContent = 'Nukleus: Pusat kendali sel. Mengandung materi genetik (DNA) yang membawa informasi untuk mengatur aktivitas sel.';
+                    break;
+                case '12':
+                    popupContainer.textContent = 'Nukleoplasma: Cairan kental di dalam nukleus. Mengandung kromatin (DNA dan protein) serta berbagai molekul yang berperan dalam regulasi gen dan replikasi DNA.';
+                    break;
+                default:
+                    popupContainer.textContent = 'Informasi tidak tersedia.';
+                    break;
+            }
+
+            document.body.appendChild(popupContainer);
+
+            // Menutup popup ketika diklik
+            popupContainer.addEventListener('click', function () {
+                popupContainer.remove();
+            });
+        });
+    });
+</script>
+
+</html>

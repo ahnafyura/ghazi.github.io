@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sel Tumbuhan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .sel-hewan {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .rectangle-141 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 220%;
+            background-color: #50807a;
+        }
+
+        .container-20 {
+            margin-top: 110vh;
+            position: relative;
+            width: 80%;
+            height: 190vh;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container-9 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .container-4 {
+            display: flex;
+            align-items: center;
+        }
+
+        .rectangle-183 {
+            width: 30px;
+            height: 30px;
+            background-color: #0080FF;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .bio-sync {
+            font-weight: bold;
+            font-size: 24px;
+            font-family: "Inter";
+            margin-top: 2vh;
+        }
+
+        .icontimes {
+            cursor: pointer;
+        }
+
+        .sel-hewan-1 {
+            font-weight: bold;
+            font-size: 32px;
+            margin: 20px 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .container-14 {
+            position: relative;
+            width: 100%;
+            height: 50%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 40px;
+            margin-left: 50px;
+        }
+
+        .rectangle-76 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .item-sel-tumbuhan {
+            padding: 2vh 2vh;
+            list-style-type: none;
+            display: block;
+            background: linear-gradient(to right, #00BFFF, #353598);
+            border-radius: 10px;
+            width: 50%;
+            height: 70%;
+            align-items: center;
+            text-align: center;
+            color: #ffffff;
+            margin-bottom: 10px;
+            transition: .3s ease;
+        }
+
+        .item-sel-tumbuhan:hover {
+            transform: scale(1.10);
+        }
+
+        a {
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        img {
+            width: 10vh;
+            border-radius: 10px;
+            padding: 2px;
+        }
+
+        .container-22 {
+            width: 100%;
+            height: auto;
+        }
+
+        .onClick {
+            margin-top: 17vh;
+            width: 30%;
+            border-radius: 10px;
+            color: white;
+            font-size: 15px;
+            background-color: rgb(97, 97, 97);
+            height: 10vh;
+            cursor: pointer;
+            margin-bottom: 20px;
+            transition: .5s ease;
+        }
+
+        .onClick:hover {
+            color: antiquewhite;
+            background-color: rgb(37, 37, 37);
+        }
+
+        /* Add styles for other elements */
+    </style>
+</head>
+
+<body>
+    <div class="sel-hewan">
+        <div class="rectangle-141"></div>
+        <div class="container-20">
+            <div class="bio-sync">BioSync</div>
+            <div class="container-9">
+                <div class="container-4"></div>
+                <div class="icontimes">
+                    <!-- <img class="vector" src="../assets/vectors/Unknown" /> -->
+                </div>
+            </div>
+            <div class="sel-hewan-1">Sel Tumbuhan</div>
+            <img class="container-22" src="/img/selTumbuhan11.png" />
+            <div class="container-14">
+                <a href="#" class="item-sel-tumbuhan" id="1">Dinding Sel
+                    <img src="/img/1.png" alt="">
+                </a>
+                <a href="#" class="item-sel-tumbuhan" id="2">Selaput Plasma
+                    <img src="/img/2.png" alt="">
+                </a>
+                <a href="#" class="item-sel-tumbuhan" id="3">Nukleus
+                    <img src="/img/3.png" alt="">
+                </a>
+                <a href="#" class="item-sel-tumbuhan" id="4">Retikulum Endoplasma
+                    <img src="/img/4.png" alt="">
+                </a>
+                <a href="#" class="item-sel-tumbuhan" id="5">Ribosom
+                    <img src="/img/5.png" alt="">
+                </a>
+                <a href="#" class="item-sel-tumbuhan" id="6">Sitoplasma
+                    <img src="/img/6.png" alt="">
+                </a>
+                <a href="#" class="item-sel-tumbuhan" id="7">Badan Golgi
+                    <img src="/img/7.png" alt="">
+                </a>
+                <a href="#" class="item-sel-tumbuhan" id="8">Mitokondria
+                    <img src="/img/8.png" alt="">
+                </a>
+                <a href="#" class="item-sel-tumbuhan" id="9">Vakuola
+                    <img src="/img/9.png" alt="">
+                </a>
+                <a href="#" class="item-sel-tumbuhan" id="10">Kloroplas
+                    <img src="/img/10.png" alt="">
+                </a>
+            </div>
+            <button class="onClick" onclick="window.location.href='/menu.html';">back</button>
+            <div class="container-2">
+                <div class="rectangle-148"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    document.querySelectorAll('.item-sel-tumbuhan').forEach(item => {
+        item.addEventListener('click', function (event) {
+            event.preventDefault(); // Mencegah navigasi default
+            const itemId = item.id; // Mengambil id item
+
+            // Menghapus popup yang sudah ada sebelum membuat yang baru
+            const existingPopup = document.querySelector('.popup-container');
+            if (existingPopup) {
+                existingPopup.remove();
+            }
+
+            const popupContainer = document.createElement('div');
+            popupContainer.className = 'popup-container'; // Menambahkan class untuk identifikasi
+            popupContainer.style = `
+                position: fixed;
+                left: 50%;
+                top: 50%;
+                border-radius: 10px;
+                width: 50%;
+                height: auto;
+                transform: translate(-50%, -50%);
+                padding: 20px;
+                background: white;
+                border: 1.5px solid black;
+                z-index: 1000;
+                margin-block: 10px;
+                transition: all 0.5s ease-in;
+            `;
+
+            // Menentukan konten berdasarkan id
+            switch (itemId) {
+                case '1':
+                    popupContainer.textContent = 'Dinding Sel: Pelindung kokoh sel tumbuhan, terbuat dari selulosa, memberikan bentuk tetap dan melindungi dari kerusakan mekanis.';
+                    break;
+                case '2':
+                    popupContainer.textContent = 'Selaput Plasma: Pembatas selektif yang mengatur keluar masuknya zat, menjaga keseimbangan internal sel.';
+                    break;
+                case '3':
+                    popupContainer.textContent = 'Nukleus: Pusat kendali sel, menyimpan materi genetik (DNA) yang mengatur aktivitas dan pewarisan sifat.';
+                    break;
+                case '4':
+                    popupContainer.textContent = 'Retikulum Endoplasma: Jaringan membran yang berperan dalam sintesis protein (RE kasar) dan lipid (RE halus), serta transportasi zat dalam sel.';
+                    break;
+                case '5':
+                    popupContainer.textContent = 'Ribosom: Pabrik protein sel, menerjemahkan informasi genetik dari RNA untuk merangkai asam amino menjadi protein.';
+                    break;
+                case '6':
+                    popupContainer.textContent = 'Sitoplasma: Cairan kental pengisi sel, tempat berlangsungnya reaksi kimia dan pergerakan organel.';
+                    break;
+                case '7':
+                    popupContainer.textContent = 'Badan Golgi: Pusat pengemasan dan pengiriman sel, memodifikasi, menyortir, dan mengemas protein serta lipid untuk dikirim ke tujuan.';
+                    break;
+                case '8':
+                    popupContainer.textContent = 'Mitokondria: Pembangkit energi sel, menghasilkan ATP melalui respirasi seluler untuk mendukung aktivitas sel.';
+                    break;
+                case '9':
+                    popupContainer.textContent = 'Vakuola: Ruang penyimpanan serbaguna, berisi air, nutrisi, pigmen, dan produk sampingan metabolisme.';
+                    break;
+                case '10':
+                    popupContainer.textContent = 'Kloroplas: Tempat berlangsungnya fotosintesis, mengubah energi cahaya menjadi energi kimia dalam bentuk glukosa.';
+                    break;
+                default:
+                    popupContainer.textContent = 'Informasi tidak tersedia.';
+                    break;
+            }
+
+            document.body.appendChild(popupContainer);
+
+            // Menutup popup ketika diklik
+            popupContainer.addEventListener('click', function () {
+                popupContainer.remove();
+            });
+        });
+    });
+</script>
+
+</html>

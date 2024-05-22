@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sel Prokariotik</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .sel-hewan {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .rectangle-141 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 200%;
+            background-color: #0080FF;
+        }
+
+        .container-20 {
+            margin-top: 125vh;
+            position: relative;
+            width: 80%;
+            height: 150vh;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container-9 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .container-4 {
+            display: flex;
+            align-items: center;
+        }
+
+        .rectangle-183 {
+            width: 30px;
+            height: 30px;
+            background-color: #0080FF;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .bio-sync {
+            font-weight: bold;
+            font-size: 24px;
+            font-family: "Inter";
+            margin-top: 2vh;
+        }
+
+        .icontimes {
+            cursor: pointer;
+        }
+
+        .sel-hewan-1 {
+            font-weight: bold;
+            font-size: 32px;
+            margin: 20px 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .container-14 {
+            position: relative;
+            width: 100%;
+            height: 50%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 40px;
+            margin-left: 50px;
+        }
+
+        .rectangle-76 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .item-sel-pro {
+            padding: 2vh 2vh;
+            list-style-type: none;
+            display: block;
+            background: linear-gradient(to right, #00BFFF, #353598);
+            border-radius: 10px;
+            width: 50%;
+            height: 70%;
+            align-items: center;
+            text-align: center;
+            color: #ffffff;
+            margin-bottom: 10px;
+            transition: .3s ease;
+        }
+
+        .item-sel-pro:hover {
+            transform: scale(1.10);
+        }
+
+        a {
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        img {
+            width: 10vh;
+            border-radius: 10px;
+            padding: 2px;
+        }
+
+        .container-22 {
+            width: 100%;
+            height: auto;
+        }
+
+        .onClick {
+            margin-top: 15vh;
+            width: 30%;
+            border-radius: 10px;
+            color: white;
+            background-color: rgb(97, 97, 97);
+            height: 5%;
+            cursor: pointer;
+            margin-bottom: 20px;
+            transition: .5s ease;
+        }
+
+        .onClick:hover {
+            color: antiquewhite;
+            background-color: rgb(37, 37, 37);
+        }
+
+        /* Add styles for other elements */
+    </style>
+</head>
+
+<body>
+    <div class="sel-hewan">
+        <div class="rectangle-141"></div>
+        <div class="container-20">
+            <div class="bio-sync">BioSync</div>
+            <div class="container-9">
+                <div class="container-4"></div>
+                <div class="icontimes">
+                    <!-- <img class="vector" src="../assets/vectors/Unknown" /> -->
+                </div>
+            </div>
+            <div class="sel-hewan-1">Bakteri</div>
+            <img class="container-22" src="/img/sel-pro.png" />
+            <div class="container-14">
+                <a href="#" class="item-sel-pro" id="1">Pili
+                    <img src="/img/11.png" alt="">
+                </a>
+                <a href="#" class="item-sel-pro" id="2">Kapsul
+                    <img src="/img/22.png" alt="">
+                </a>
+                <a href="#" class="item-sel-pro" id="3">Dinding Sel
+                    <img src="/img/33.png" alt="">
+                </a>
+                <a href="#" class="item-sel-pro" id="4">Membran Sel
+                    <img src="/img/44.png" alt="">
+                </a>
+                <a href="#" class="item-sel-pro" id="5">Inti Sel (DNA)
+                    <img src="/img/55.png" alt="">
+                </a>
+                <a href="#" class="item-sel-pro" id="6">Sitoplasma
+                    <img src="/img/66.png" alt="">
+                </a>
+                <a href="#" class="item-sel-pro" id="7">Ribosom
+                    <img src="/img/77.png" alt="">
+                </a>
+                <a href="#" class="item-sel-pro" id="8">Flagela
+                    <img src="/img/88.png" alt="">
+                </a>
+            </div>
+            <button class="onClick" onclick="window.location.href='/menu.html';">back</button>
+            <div class="container-2">
+                <div class="rectangle-148"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    document.querySelectorAll('.item-sel-pro').forEach(item => {
+        item.addEventListener('click', function (event) {
+            event.preventDefault(); // Mencegah navigasi default
+            const itemId = item.id; // Mengambil id item
+
+            // Menghapus popup yang sudah ada sebelum membuat yang baru
+            const existingPopup = document.querySelector('.popup-container');
+            if (existingPopup) {
+                existingPopup.remove();
+            }
+
+            const popupContainer = document.createElement('div');
+            popupContainer.className = 'popup-container'; // Menambahkan class untuk identifikasi
+            popupContainer.style = `
+                position: fixed;
+                left: 50%;
+                top: 50%;
+                border-radius: 10px;
+                width: 50%;
+                height: auto;
+                transform: translate(-50%, -50%);
+                padding: 20px;
+                background: white;
+                border: 1.5px solid black;
+                z-index: 1000;
+                margin-block: 10px;
+                transition: all 0.5s ease-in;
+            `;
+
+            // Menentukan konten berdasarkan id
+            switch (itemId) {
+                case '1':
+                    popupContainer.textContent = 'Pili: Rambut halus seperti benang yang menonjol dari permukaan sel bakteri. Pili memiliki peran penting dalam perlekatan bakteri pada permukaan sel inang, konjugasi (pertukaran materi genetik antar bakteri), dan pembentukan biofilm.';
+                    break;
+                case '2':
+                    popupContainer.textContent = 'Kapsul: Lapisan pelindung lendir yang terletak di luar dinding sel. Kapsul membantu bakteri menghindari sistem kekebalan tubuh inang, meningkatkan kemampuan bertahan hidup di lingkungan yang keras, dan berperan dalam pembentukan biofilm.';
+                    break;
+                case '3':
+                    popupContainer.textContent = 'Dinding Sel: Struktur kaku yang mengelilingi sel bakteri, memberikan bentuk, dukungan struktural, dan perlindungan dari tekanan osmotik. Dinding sel bakteri mengandung peptidoglikan, suatu polimer unik yang tidak ditemukan pada sel eukariotik.';
+                    break;
+                case '4':
+                    popupContainer.textContent = 'Membran Sel: Lapisan tipis yang membatasi sel bakteri dari lingkungan sekitarnya. Membran sel mengatur transportasi zat masuk dan keluar sel, menjaga keseimbangan internal, dan berperan dalam produksi energi.';
+                    break;
+                case '5':
+                    popupContainer.textContent = 'Inti Sel (DNA): Area di dalam sel yang mengandung materi genetik bakteri (DNA). Berbeda dengan sel eukariotik, DNA bakteri tidak terbungkus dalam membran inti (nukleus), melainkan tersebar di sitoplasma dalam bentuk nukleoid.';
+                    break;
+                case '6':
+                    popupContainer.textContent = 'Sitoplasma: Cairan kental yang mengisi ruang di dalam sel bakteri. Sitoplasma mengandung enzim, ribosom, nutrisi, dan berbagai molekul lain yang penting untuk fungsi sel.';
+                    break;
+                case '7':
+                    popupContainer.textContent = 'Ribosom: Partikel kecil yang terdiri dari RNA dan protein. Ribosom merupakan tempat berlangsungnya sintesis protein, proses penting untuk pertumbuhan dan perkembangan bakteri.';
+                    break;
+                case '8':
+                    popupContainer.textContent = 'Flagela: Struktur seperti cambuk yang memanjang dari permukaan sel bakteri. Flagela memungkinkan bakteri untuk bergerak secara aktif menuju sumber nutrisi atau menjauh dari lingkungan yang tidak menguntungkan. Jumlah dan lokasi flagela bervariasi antar jenis bakteri.';
+                    break;
+                default:
+                    popupContainer.textContent = 'Informasi tidak tersedia.';
+                    break;
+            }
+
+            document.body.appendChild(popupContainer);
+
+            // Menutup popup ketika diklik
+            popupContainer.addEventListener('click', function () {
+                popupContainer.remove();
+            });
+        });
+    });
+</script>
+
+</html>
