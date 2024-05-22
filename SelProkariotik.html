@@ -167,34 +167,34 @@
                 </div>
             </div>
             <div class="sel-hewan-1">Bakteri</div>
-            <img class="container-22" src="/img/sel-pro.png" />
+            <img class="container-22" src="img/sel-pro.png" />
             <div class="container-14">
                 <a href="#" class="item-sel-pro" id="1">Pili
-                    <img src="/img/11.png" alt="">
+                    <img src="img/11.png" alt="">
                 </a>
                 <a href="#" class="item-sel-pro" id="2">Kapsul
-                    <img src="/img/22.png" alt="">
+                    <img src="img/22.png" alt="">
                 </a>
                 <a href="#" class="item-sel-pro" id="3">Dinding Sel
-                    <img src="/img/33.png" alt="">
+                    <img src="img/33.png" alt="">
                 </a>
                 <a href="#" class="item-sel-pro" id="4">Membran Sel
-                    <img src="/img/44.png" alt="">
+                    <img src="img/44.png" alt="">
                 </a>
                 <a href="#" class="item-sel-pro" id="5">Inti Sel (DNA)
-                    <img src="/img/55.png" alt="">
+                    <img src="img/55.png" alt="">
                 </a>
                 <a href="#" class="item-sel-pro" id="6">Sitoplasma
-                    <img src="/img/66.png" alt="">
+                    <img src="img/66.png" alt="">
                 </a>
                 <a href="#" class="item-sel-pro" id="7">Ribosom
-                    <img src="/img/77.png" alt="">
+                    <img src="img/77.png" alt="">
                 </a>
                 <a href="#" class="item-sel-pro" id="8">Flagela
-                    <img src="/img/88.png" alt="">
+                    <img src="img/88.png" alt="">
                 </a>
             </div>
-            <button class="onClick" onclick="window.location.href='/menu.html';">back</button>
+            <button class="onClick" onclick="window.location.href='menu.html';">back</button>
             <div class="container-2">
                 <div class="rectangle-148"></div>
             </div>
@@ -205,17 +205,16 @@
 <script>
     document.querySelectorAll('.item-sel-pro').forEach(item => {
         item.addEventListener('click', function (event) {
-            event.preventDefault(); // Mencegah navigasi default
-            const itemId = item.id; // Mengambil id item
+            event.preventDefault(); 
+            const itemId = item.id; 
 
-            // Menghapus popup yang sudah ada sebelum membuat yang baru
             const existingPopup = document.querySelector('.popup-container');
             if (existingPopup) {
                 existingPopup.remove();
             }
 
             const popupContainer = document.createElement('div');
-            popupContainer.className = 'popup-container'; // Menambahkan class untuk identifikasi
+            popupContainer.className = 'popup-container';
             popupContainer.style = `
                 position: fixed;
                 left: 50%;
